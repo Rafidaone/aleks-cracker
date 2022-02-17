@@ -19,17 +19,72 @@ def date(string):
 #  my bad ui
 print("---------------------------------------------------")
 print("aleks cracker for woodland mid 2021-2022 by RafiDEV")
-print("----------------------------------------------------")
+print("---------------------------------------------------")
 print("-------------------")
 print("0 | exit")
 print("--|----------------")
 print("1 | simple")
 print("--|----------------")
 print("2 | randomized (not working for now)")
+print("--|----------------")
+print("3 | boot dude our of there acc")
 print("-------------------")
 guy = input(": ")
 
 #this cheks what the thing is u put is in the menue
+
+
+# boot of line
+if guy == "3":
+
+
+    uname = input("type your aleks user name: ")
+    pw = input("type your aleks password: ")
+
+    input("move your mouse over the password text thing in aleks")
+    print("u got 5 sec to do so")
+
+    time.sleep(5)
+    pb = pyautogui.position()
+
+    input("move your mouse over the username text thing in aleks")
+    print("u got 5 sec to do so")
+
+    time.sleep(5)
+    ub = pyautogui.position()
+
+
+
+
+
+    #the spam thing were it will open login and quit
+    while True:
+        pyautogui.hotkey('ctrl', 't')
+        pyautogui.write('https://www.aleks.com/login')
+        pyautogui.press('enter')
+        time.sleep(1)
+        
+        pyautogui.moveTo(pb)
+        pyautogui.click()
+        pyautogui.write(pw)
+
+        pyautogui.moveTo(ub)
+        pyautogui.click()
+        pyautogui.write(uname)
+
+        pyautogui.press('enter')
+        time.sleep(10)
+
+        pyautogui.press('tab')
+        pyautogui.press('tab')
+        pyautogui.press('enter')
+        pyautogui.press('down')
+        pyautogui.press('enter')
+        time.sleep(5)
+        pyautogui.hotkey('ctrl', 'w')
+
+
+
 
 if guy == "hecker":
     while True:
